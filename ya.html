@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pengelolaan Sampah Digital</title>
+
+    <link rel="stylesheet" href="ya.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Sistem Pengelolaan Sampah Digital</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#jadwal">Penjadwalan</a>
+            <a href="#profil">Profil</a>
+            <a href="#edukasi">Edukasi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Selamat Datang di Sistem Pengelolaan Sampah Digital</h2>
+            <p>Platform komunitas untuk menjaga lingkungan dengan pengelolaan sampah yang cerdas.</p>
+            <button onclick="showAlert()">Pelajari Lebih Lanjut</button>
+            <div class="slideshow">
+                <img src="7q0dizm831bxmp9.jpeg" alt="Gambar 1" class="slide" width="50px">
+                <img src="20240514165940.jpg" alt="Gambar 2" class="slide">
+                <img src="sedang_1555380245WhatsApp Image 2019-04-10 at 21.01.30.jpeg" alt="Gambar 3" class="slide">
+            </div>
+        </section>
+
+        <div id="content">
+            <article>
+                <h2>Mengenal Jenis Sampah</h2>
+                <p>Beragam jenis sampah yang perlu dikelola dengan cara yang berbeda untuk menjaga kelestarian lingkungan.</p>
+                <ul>
+                    <li>Sampah Organik</li>
+                    <li>Sampah Anorganik</li>
+                    <li>Sampah B3 (Berbahaya dan Beracun)</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Tips Mengurangi Sampah Rumah Tangga</h2>
+                <p>Langkah sederhana yang dapat dilakukan sehari-hari untuk mengurangi jumlah sampah yang kita hasilkan.</p>
+                <ol>
+                    <li>Gunakan produk dengan kemasan yang dapat didaur ulang.</li>
+                    <li>Bawa tas belanja sendiri untuk mengurangi kantong plastik.</li>
+                    <li>Kompos sisa makanan di rumah.</li>
+                </ol>
+            </article>
+        </div>
+
+        <section id="infographic">
+            <h3>Statistik Pengelolaan Sampah</h3>
+            <div class="infographic-container">
+                <div class="stat-card">
+                    <h4>Sampah Daur Ulang</h4>
+                    <p>45% sampah bisa didaur ulang di rumah tangga.</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Sampah Plastik</h4>
+                    <p>25 juta ton sampah plastik dihasilkan setiap tahun.</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Pengurangan Sampah</h4>
+                    <p>Pengurangan 50% sampah plastik dapat mengurangi dampak lingkungan secara signifikan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h3>Testimoni Komunitas</h3>
+            <div class="testimonial-card">
+                <p>"Sistem pengelolaan sampah ini sangat membantu kami untuk mengurangi sampah di lingkungan!" - Pramudya</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Komunitas ini memberikan edukasi yang sangat berguna bagi keluarga kami dalam mengelola sampah." - Swasti</p>
+            </div>
+        </section>
+
+        <section id="join">
+            <h3>Bergabung dengan Komunitas Kami</h3>
+            <p>Jadilah bagian dari gerakan pengelolaan sampah yang lebih baik dan berbagi pengetahuan dengan sesama.</p>
+            <button onclick="joinCommunity()">Gabung Komunitas</button>
+        </section>
+
+        <aside>
+            <h3>Inovasi dalam Pengelolaan Sampah</h3>
+            <img src="pelatihan-2-UM-Palopo-sayur-urban-farming-768x432.jpg" alt="Komunitas Pengelolaan Sampah" class="community-photo" width="100%">
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistem Pengelolaan Sampah Digital. Semua Hak Dilindungi.</p>
+        <p>Kontak: <a href="mailto:email@domain.com">danielmanalu2020@gmail.com</a> | Telp: +62 81265543206</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showAlert() {
+            alert("Terima kasih telah tertarik dengan Sistem Pengelolaan Sampah Digital!");
+        }
+        function joinCommunity() {
+            alert("Silakan hubungi admin untuk bergabung dengan komunitas kami.");
+        }
+
+        // Slideshow Script
+        let currentIndex = 0;
+        let slides = document.querySelectorAll('.slide');
+        
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            currentIndex++;
+            if (currentIndex > slides.length) { currentIndex = 1 }
+            slides[currentIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        showSlides();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #2a7d35;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #81c784;
+    color: #fff;
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #2a7d35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+    overflow: hidden; /* Menyembunyikan gambar yang melebihi batas */
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    max-width: 500px; /* Membatasi lebar maksimum gambar agar tidak terlalu besar */
+    margin: 0 auto; /* Mengatur gambar agar berada di tengah */
+    height: auto; /* Membiarkan tinggi gambar mengikuti proporsi lebar */
+}
+
+/* Gambar dalam slideshow menjadi responsif */
+@media (max-width: 768px) {
+    .slide {
+        max-width: 100%; /* Pada perangkat dengan layar kecil, gambar akan memanfaatkan seluruh lebar layar */
+    }
+}
+
+#content {
+    margin: 40px 10%;
+}
+
+article h2 {
+    font-size: 2rem;
+    color: #388e3c;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#infographic {
+    margin: 40px 10%;
+    text-align: center;
+}
+
+.infographic-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #81c784;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+#testimonials {
+    margin: 40px 10%;
+    text-align: center;
+}
+
+.testimonial-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#join {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#join h3 {
+    font-size: 2rem;
+    color: #388e3c;
+}
+
+#join p {
+    font-size: 1.1rem;
+}
+
+#join button {
+    background-color: #388e3c;
+}
+
+#join button:hover {
+    background-color: #2a7d35;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.community-photo {
+    width: 80%; /* Adjust width for community image */
+    max-width: 500px; /* Limit max width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2a7d35;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
